@@ -1,0 +1,122 @@
+/* fontfamily */
+body{
+    font-family: 'Oswald', sans-serif;
+}
+/* top banner background 
+(note:- in this section figma valu is not working) */
+.top{
+    width: 100%;
+    background-color: #2D25A0;
+}
+.banner{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.first{
+    display: flex; 
+}
+.titel{
+    width: 280px;
+    height: 115px;
+    margin-left: 100px;
+    margin-top: 90px;
+    margin-bottom: 120px; 
+    font-size: 50px;
+    color: #FFFFFF ;
+}
+.watch-live{
+    width: 168px;
+    height: 44px;
+    text-decoration: none;
+    background-color: crimson;
+    padding: 10px 24px;
+    color: white;
+    font-weight: 500;
+    margin-left: 100px;
+}
+.fas{
+    margin-left: 10px;
+}
+.titelimg img{
+    width: 450px;
+    height: 350px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    margin-left: 100px;
+}
+.titelimg:hover{
+    transform: skew(2deg);
+}
+/* players info */
+main{
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+.container{
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.all-players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 27px;
+}
+.single-player{
+    background-color: white;
+    padding: 15px;
+    box-shadow: 3px 3px 3px 3px gainsboro;
+}
+.single-player img{
+    width: 250px;
+    height: 250px;
+}
+.single-player h2{
+    margin-top: 16px;
+    font-size: 28px;
+}
+.single-player p{
+    margin-top: 10px;
+    width: 250px;
+    font-size: 16px;
+}
+/* Footer style  */
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 158px;
+}
+.logo img{
+    width: 350px;
+    height: 110px;
+}
+.sicon a{
+    color: #969BAB;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.footer p{
+    font-size: 18px;
+}
+/* media for mobile devices */
+@media only screen and (max-width:688px) {
+    .top{
+        width: 100%;
+    }
+    .banner, .all-players{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .container{
+        width: 100%;
+    }
+    .first, .single-player{
+        flex-direction: column;
+        
+    }
+    
+}
+
+
